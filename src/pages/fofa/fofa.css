@@ -28,25 +28,44 @@ body {
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colunas flexíveis */
+    gap: 20px; /* Espaço entre as imagens */
     margin-top: 20px;
 }
 
 .photo {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Faz com que todas as imagens tenham a mesma largura */
+    height: 200px; /* Definindo uma altura fixa para manter as imagens do mesmo tamanho */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .photo:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+.linkhome{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
     .photo-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste para telas menores */
+    }
+    .linkhome{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
     }
 }
