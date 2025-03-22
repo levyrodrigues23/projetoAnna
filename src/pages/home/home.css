@@ -1,0 +1,52 @@
+.home {
+    flex-direction: column;
+    display: flex;
+    font-size: 20px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    flex: 1; /* Garante que a home ocupe o espaço disponível */
+    min-height: 100vh; /* Faz a home ocupar pelo menos a altura total da tela */
+}
+
+.div {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.auau {
+    padding-top: 25px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .div {
+        margin-top: 20px;
+    }
+
+    .auau {
+        width: 80%; /* Reduz o tamanho da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        font-size: 16px;
+    }
+
+    .div {
+        margin-top: 15px;
+    }
+
+    .auau {
+        width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível */
+    }
+}

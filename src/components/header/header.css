@@ -1,0 +1,61 @@
+.anna{
+    height: 150px;
+    border-radius: 300px;
+    transition: all 1s;
+    margin-top: 20px;
+    margin-left: 20px;
+} 
+
+.anna:hover{
+transform: scale(1.1);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: palevioletred;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
+    margin-right: 30px;
+    padding-right: 20px;
+}
+
+.header a:hover{
+    transform: scale(1.1);
+    color: rgb(167, 28, 51);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center;
+    }
+
+    .header a {
+        font-size: 18px;
+        margin: 10px 0; /* Adiciona espaçamento entre os links */
+    }
+
+    .anna {
+        height: 120px; /* Reduz o tamanho da imagem */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header a {
+        font-size: 16px;
+    }
+
+    .anna {
+        height: 100px; /* Reduz ainda mais o tamanho da imagem */
+    }
+}
