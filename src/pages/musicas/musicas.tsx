@@ -1,4 +1,4 @@
-import "./Musicas.css";
+import "./musicas.css";
 
 const Musicas = () => {
   const musicas = [
