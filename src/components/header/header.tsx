@@ -8,10 +8,10 @@ const Header = () => {
   return (
     <header className="header">
       <img className="anna" src={fotoAna} alt="foto da ana" />
-      <Link to="/">Home</Link>
-      <Link to="/detalhes">Detalhes</Link>
-      <Link to='/musicas'>Músicas</Link>
-      <Link to="/fofa">Fotos</Link>
+      <Link to="/">Home❣️ </Link>
+      <Link to="/detalhes">Detalhes❣️ </Link>
+      <Link to='/musicas'>Músicas❣️</Link>
+      <Link to="/fofa">Fotos❣️</Link>
      
     </header>
   );

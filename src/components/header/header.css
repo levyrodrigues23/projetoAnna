@@ -1,9 +1,11 @@
 .anna{
-    height: 150px;
+    height: 100px;
     border-radius: 300px;
     transition: all 1s;
     margin-top: 20px;
-    margin-left: 20px;
+    border: 1px solid #ccc;
+    
+
 } 
 
 .anna:hover{
@@ -16,7 +18,8 @@ transform: scale(1.1);
     justify-content: space-between;
     background-color: palevioletred;
     padding: 20px;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    gap: 20px;
+    
 }
 
 .header a{
@@ -47,12 +50,14 @@ transform: scale(1.1);
     .anna {
         height: 120px; /* Reduz o tamanho da imagem */
         margin: 10px 0;
+        
     }
 }
 
 @media (max-width: 480px) {
     .header a {
         font-size: 16px;
+        
     }
 
     .anna {

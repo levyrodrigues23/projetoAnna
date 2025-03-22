@@ -7,7 +7,7 @@ import auau from '../../assets/auau.jpeg'
 const Home = () => {
   return (
     <div className='home'>
-        <h1>Você está na página de anna!</h1>
+        <h1>Você está na página de <span className='nomeAnna'><a href="https://www.instagram.com/fy.annaclara/">anna! 💓</a></span></h1>
         <h2>sinta-se a vontade para saber tudo sobre mim :)</h2>
         <img className='auau' src={auau} alt="cachorro" />
         <div className='div'>
