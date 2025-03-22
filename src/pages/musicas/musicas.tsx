@@ -33,7 +33,7 @@ const Musicas = () => {
     {
       titulo: "Telepatía",
       artista: "Kali Uchis",
-      link: "https://youtu.be/t7M89YJAPhM?si=eWtpNu3vTtbj95Rn://youtu.be/c4wsxp24xGo?si=nBXfcvY0Be3IejyP", // Link corrigido
+      link: "https://youtu.be/Dwzk-XZxZ4k?si=i8NCUrlWjD6wdNUp", // Link corrigido
       descricao:
         "Com uma vibe envolvente e misteriosa, essa música me faz viajar. A mistura de inglês e espanhol na letra é simplesmente hipnotizante.",
     },
